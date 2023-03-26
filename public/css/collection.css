@@ -1,0 +1,156 @@
+body {
+    padding:0; 
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #1d1d1b;
+    font-size: medium;
+    overflow-y: hidden;
+}
+.bold{
+    font-weight: bold;
+}
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 98vw;
+    height: 5vh;
+    align-content: space-between;
+  }
+  
+  .navbar a {
+    float:right;
+    display: block;
+    color: #1d1d1b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+  
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.second-bar{
+    margin-left: 2em;
+}
+
+.svg-image-collection{
+    width: 50%;
+    margin-top: 9vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 120px;
+    width: 100%;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.grid-item {
+    padding: 2px;
+    color: #1d1d1b;
+    border: 1px dashed #1d1d1b;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display:flex;
+  }
+
+.inner-div{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    height: 100%
+}
+.inner-item-one{
+    background-color: #f5e0dc;
+    box-shadow: 0.2em 0em #1d1d1b;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1d1d1b;  
+}
+.inner-item-two{
+    background-color: #f0eeee;
+    box-shadow: 0.2em 0em #1d1d1b;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1d1d1b;  
+}
+
+.inner-item {
+    text-align: left;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+
+}
+a{
+    text-decoration: none;
+    color: #1d1d1b;
+
+}
+.grid-container a {
+    display: block;
+}
+
+
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+h1{
+  font-size: 0.8em;
+}
+.svg-image-collection{
+  width: 80%;
+  margin-top: 9vh;
+}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  h1{
+    font-size: 1em;
+  }
+  .svg-image-collection{
+    width: 100%;
+    margin-top: 9vh;
+  }
+      
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  h1{
+    font-size: 1em;
+  }
+  .svg-image-collection{
+    width: 80%;
+    margin-top: 9vh;
+  }
+}
