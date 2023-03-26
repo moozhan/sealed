@@ -2,7 +2,6 @@
 const express = require('express')
 const path = require("path")
 const app = express()
-const port = 3000
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
@@ -21,5 +20,5 @@ app.get('/seminal/introduction', (req, res) => {
 })
 
 
-//list on port 3000
-app.listen(port, () => console.info(`Listening on port ${port}`));
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log('Listening on port 3000'))
